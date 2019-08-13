@@ -1,0 +1,47 @@
+{
+  "name": "hassan/one-loop",
+  "description": "A Laravel/PHP Package for Minimizing Collection/Array Iterations",
+  "keywords": [
+    "hassan",
+    "one-loop",
+    "collect",
+    "collection",
+    "laravel-collection"
+  ],
+  "homepage": "https://github.com/dhassanali/one-loop",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Hassan Ali",
+      "email": "hello@hassan-ali.me"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "illuminate/support": "5.8.*",
+    "illuminate/contracts": "5.8.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "Hassan\\OneLoop\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hassan\\OneLoop\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
