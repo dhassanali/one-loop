@@ -29,8 +29,7 @@ class OneLoop
     private function applyMethods($item, $index) : void
     {
         foreach ($this->applicableMethods as $key => $method) {
-
-            if (!isset($this->items[$index])) {
+            if (! isset($this->items[$index])) {
                 continue;
             }
 

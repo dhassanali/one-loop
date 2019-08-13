@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('one_loop')) {
+if (! function_exists('one_loop')) {
     /**
      * @param \Illuminate\Support\Collection|array $items
      * @return mixed
