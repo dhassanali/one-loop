@@ -17,7 +17,7 @@ class OneLoop
         $this->items = $this->getArrayableItems($items);
     }
 
-    public function apply() : array
+    public function apply(): array
     {
         foreach ($this->items as $key => $item) {
             $this->applyMethods($item, $key);
@@ -26,7 +26,7 @@ class OneLoop
         return $this->items;
     }
 
-    private function applyMethods($item, $index) : void
+    private function applyMethods($item, $index): void
     {
         foreach ($this->applicableMethods as $key => $method) {
             if (! isset($this->items[$index])) {
