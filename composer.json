@@ -6,7 +6,9 @@
     "one-loop",
     "collect",
     "collection",
-    "laravel-collection"
+    "laravel-collection",
+    "performance",
+    "optimization"
   ],
   "homepage": "https://github.com/dhassanali/one-loop",
   "license": "MIT",
@@ -18,12 +20,12 @@
     }
   ],
   "require": {
-    "php": "^7.2.5",
-    "illuminate/support": "^5.8|^6.0|^7.0",
-    "illuminate/contracts": "^5.8|^6.0|^7.0"
+    "php": "^7.2.5|^8.0|^8.1|^8.2|^8.3",
+    "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+    "illuminate/contracts": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "^8.5"
+    "phpunit/phpunit": "^8.5|^9.0|^10.0"
   },
   "autoload": {
     "files": [
@@ -43,5 +45,12 @@
   },
   "config": {
     "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hassan\\OneLoop\\OneLoopServiceProvider"
+      ]
+    }
   }
 }
