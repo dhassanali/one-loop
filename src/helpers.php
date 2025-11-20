@@ -1,12 +1,14 @@
 <?php
 
-if (! function_exists('one_loop')) {
+if (!function_exists('one_loop')) {
     /**
-     * @param \Illuminate\Support\Collection|array $items
-     * @return mixed
+     * Create a new OneLoop instance
+     *
+     * @param array|iterable $data
+     * @return \Hassan\OneLoop\OneLoop
      */
-    function one_loop($items)
+    function one_loop($data)
     {
-        return new \Hassan\OneLoop\OneLoop($items);
+        return new \Hassan\OneLoop\OneLoop($data);
     }
 }
